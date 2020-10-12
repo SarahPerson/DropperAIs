@@ -1,5 +1,4 @@
-`
-function main(gameState, side) {
+
   const myTeam = gameState.teamStates[side];
   const possibleMoves = [];
   const [rowSize, colSize] = gameState.boardSize;
@@ -28,5 +27,4 @@ function main(gameState, side) {
     , 100); // test timeout of player script for limiting execution time.
 
     })
-}
-`
+
