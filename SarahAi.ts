@@ -6,8 +6,6 @@ function main(gameState, side) {
 
     let board = gameState.tileStates
 
-    console.log(board);
-
     const enemyTeam = gameState.teamStates[getOtherTeam(side)];
     let nearest = nearestEnemy(myTeam, enemyTeam);
 
@@ -17,8 +15,6 @@ function main(gameState, side) {
 
     let playerOne =firstPlayerMoves[Math.floor(Math.random() * firstPlayerMoves.length)] ;
     let playerTwo =secondPlayerMoves[Math.floor(Math.random() * secondPlayerMoves.length)] ;
-    console.log(playerOne);
-    console.log(playerTwo);
     return [playerOne, playerTwo, finalPlayerMoves[Math.floor(Math.random() * finalPlayerMoves.length)]];
   }
 
