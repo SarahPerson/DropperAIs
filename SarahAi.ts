@@ -80,6 +80,8 @@ function getProtectPlayerMove(coordMe, board){
     moves.push("north");
     moves.push("north");
     moves.push("north");
+    moves.push("north");
+    moves.push("north");
   }
 
   return moves;
