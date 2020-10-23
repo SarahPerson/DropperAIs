@@ -77,11 +77,7 @@ function getProtectPlayerMove(coordMe, board){
   }
   if (canNorth && northExist){
     moves.push("north");
-    moves.push("north");
-    moves.push("north");
-    moves.push("north");
-    moves.push("north");
-    moves.push("north");
+
   }
 
   return moves;
