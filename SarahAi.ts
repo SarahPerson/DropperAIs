@@ -1,8 +1,8 @@
 function main(gameState, side) {
     const myTeam = gameState.teamStates[side];
 
-    let colSize = 5;
-    let rowSize = 5;
+    let colSize = 7;
+    let rowSize = 7;
 
     let board = gameState.tileStates
 
@@ -42,9 +42,9 @@ function getProtectPlayerMove(coordMe, board){
   let col = coordMe[1];
   let row = coordMe[0];
   const canNorth = row > 0;
-  const canSouth = row < 5 - 1;
+  const canSouth = row < 7 - 1;
   const canWest = col > 0;
-  const canEast = col < 5 - 1;
+  const canEast = col < 7 - 1;
   const northExist = board[row - 1 >= 0 ? row - 1 : 0][col] > 1;
   const southExist = board[row + 1 <= 4 ? row + 1 : 4][col] > 1;
   const westExist  = board[row][col - 1 >= 0 ? col - 1 : 0] > 1;
@@ -89,9 +89,9 @@ function getDirectionToEnemy(coordMe, coordEnemy, board){
   let col = coordMe[1];
   let row = coordMe[0];
   const canNorth = row > 0;
-  const canSouth = row < 5 - 1;
+  const canSouth = row < 7 - 1;
   const canWest = col > 0;
-  const canEast = col < 5 - 1;
+  const canEast = col < 7 - 1;
   const northExist = board[row - 1 >= 0 ? row - 1 : 0][col] > 1;
   const southExist = board[row + 1 <= 4 ? row + 1 : 4][col] > 1;
   const westExist  = board[row][col - 1 >= 0 ? col - 1 : 0] > 1;
